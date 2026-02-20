@@ -1,1 +1,22 @@
 /*  your css code here. If applicable */
+/* Make the container a responsive flex layout */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;          /* Allows items to move to the next line on smaller screens */
+  justify-content: center;  /* Centers the items horizontally */
+  gap: 15px;                /* Adds some breathing room between the cards */
+}
+
+/* Style the individual grid items per the instructions */
+.grid-item {
+  background-color: lightgray;
+  height: 150px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 40px;
+  
+  /* Centers the numbers (1, 2, 3...) perfectly inside each card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
